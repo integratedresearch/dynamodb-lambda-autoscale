@@ -10,7 +10,7 @@ if "%2"=="" goto options
 set region=%2
 echo {"Region":"%region%"} > src\configuration\Region.json
 
-echo TABLES_NAMES=uca-api-agents-%stage%,uca-api-assessment-data-media-5min-%stage%,uca-api-assessment-data-media-%stage%,uca-api-assessment-data-media-raw-%stage%,uca-api-assessment-data-media-summary-%stage%,uca-api-assessment-data-route-%stage%,uca-api-assessment-data-route-raw-%stage%,uca-api-assessment-data-wifi-%stage%,uca-api-assessment-data-wifi-raw-%stage%,uca-api-assessment-data-wifi-5min-%stage%,uca-api-assessment-data-wifi-con-%stage%,uca-api-assessment-instances-%stage%,uca-api-instances-%stage%,uca-api-assessments-%stage%,uca-api-projects-%stage% > config.env.production
+echo TABLE_NAMES=uca-api-agents-%stage%,uca-api-assessment-data-media-5min-%stage%,uca-api-assessment-data-media-%stage%,uca-api-assessment-data-media-raw-%stage%,uca-api-assessment-data-media-summary-%stage%,uca-api-assessment-data-route-%stage%,uca-api-assessment-data-route-raw-%stage%,uca-api-assessment-data-wifi-%stage%,uca-api-assessment-data-wifi-raw-%stage%,uca-api-assessment-data-wifi-5min-%stage%,uca-api-assessment-data-wifi-con-%stage%,uca-api-assessment-instances-%stage%,uca-api-instances-%stage%,uca-api-assessments-%stage%,uca-api-projects-%stage% > config.env.production
 goto done
 
 :missing-error

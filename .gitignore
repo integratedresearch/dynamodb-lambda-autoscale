@@ -36,5 +36,3 @@ dist/
 dist.zip
 build/
 config.env.production
-
-src/configuration/Region.json
